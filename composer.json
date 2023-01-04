@@ -1,0 +1,39 @@
+{
+  "name": "valantic-spryker/sitemap",
+  "type": "library",
+  "description": "Provides Sitemap",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.4",
+    "symfony/http-foundation": "^4.4.7 || ^5.0.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "ValanticSpryker\\": "src/ValanticSpryker/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ValanticSprykerTest\\": "tests/ValanticSprykerTest/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "gitlab-domains": [
+      "gitlab.nxs360.com"
+    ]
+  },
+  "authors": [
+    {
+      "name": "Valantic",
+      "homepage": "https://www.valantic.com"
+    }
+  ],
+  "keywords": [
+    "spryker"
+  ],
+  "include-path": [
+    "src/"
+  ]
+}
