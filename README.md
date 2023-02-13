@@ -113,3 +113,19 @@ $jobs[] = [
     'stores' => $allStores,
 ];
 ```
+
+6. Adjust config file
+- Add sitemap constants with your locales
+```php
+$config[SitemapConstants::SITEMAP_LOCALES] = [
+    'ESA' => [
+        'locales' => [
+            'de' => 'de_CH',
+            'fr' => 'fr_CH',
+            'it' => 'it_CH',
+        ]
+    ]
+];
+$config[SitemapConstants::SITEMAP_URL_LIMIT] = 50;
+$config[SitemapConstants::SITEMAP_SIZE_LIMIT] = 100;
+```
