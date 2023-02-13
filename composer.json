@@ -1,11 +1,10 @@
 {
   "name": "valantic-spryker/sitemap",
   "type": "library",
-  "description": "Provides Sitemap",
+  "description": "Provides sitemap",
   "license": "MIT",
   "require": {
     "php": ">=7.4",
-    "symfony/http-foundation": "^4.4.7 || ^5.0.7"
   },
   "autoload": {
     "psr-4": {
@@ -20,9 +19,23 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "config": {
+    "platform": {
+      "php": "7.4"
+    },
+    "preferred-install": "dist",
+    "use-include-path": true,
+    "sort-packages": true,
+    "github-protocols": [
+      "https"
+    ],
+    "process-timeout": 900,
+    "chromium-revision": 814168,
     "gitlab-domains": [
       "gitlab.nxs360.com"
-    ]
+    ],
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
   },
   "authors": [
     {
@@ -35,5 +48,16 @@
   ],
   "include-path": [
     "src/"
-  ]
+  ],
+  "require-dev": {
+    "spryker/code-sniffer": "^0.17.18",
+    "spryker-sdk/phpstan-spryker": "^0.4.0",
+    "spryker/architecture-sniffer": "^0.5.7",
+    "spryker/development": "^3.34"
+  },
+  "scripts": {
+    "cs-fix": "phpcbf --standard=phpcs.xml src",
+    "cs-check": "phpcs -s --standard=phpcs.xml --report=full src",
+    "md-check": "phpmd src/ text phpmd-ruleset.xml --minimumpriority 2"
+  }
 }
