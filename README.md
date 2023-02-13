@@ -61,5 +61,33 @@ class ConsoleDependencyProvider extends SprykerConsoleDependencyProvider
 }
 ```
 
-4. Replace project name
-In src/ValanticSpryker/Yves/Sitemap/Plugin/Provider/SitemapControllerProvider.php:45-53
+4. Remove everything you don't need and change the name
+- In src/ValanticSpryker/Yves/Sitemap/Plugin/Provider/SitemapControllerProvider.php:45-53
+```php
+/**
+ * Pattern: ((esa(\_(de|en))?)|((de|en)\/esa(\_(de|en))))(\_[0-9]+)?\.xml
+ * Takes into consideration the following paths:
+ * - {$storeLocales}/esa_{$storeLocales}_{number}.xml
+ * - {$storeLocales}/esa_{$storeLocales}.xml
+ * - {$storeLocales}/esa.xml
+ * - esa_{$storeLocales}_{number}.xml
+ * - esa_{$storeLocales}.xml
+ * - esa_{number}.xml
+ * - esa.xml
+ *
+ * @return string
+ */
+```
+
+5. Replace project name
+- Add cronjob in current/config/Zed/cronjobs/jenkins.php
+```php
+$jobs[] = [
+    'name' => 'generate-sitemap-de',
+    'command' => '$PHP_BIN vendor/bin/console sitemap:generate de -vvv',
+    'schedule' => '0 0 1 1 *',
+    'enable' => false,
+    'run_on_non_production' => true,
+    'stores' => $allStores,
+];
+```
