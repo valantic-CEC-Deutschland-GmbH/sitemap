@@ -61,7 +61,7 @@ class ConsoleDependencyProvider extends SprykerConsoleDependencyProvider
 }
 ```
 
-4. Remove everything you don't need and change the name
+4. Rename ESA into your project name
 - In src/ValanticSpryker/Yves/Sitemap/Plugin/Provider/SitemapControllerProvider.php:45-53
 ```php
 /**

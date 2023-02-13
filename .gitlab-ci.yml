@@ -9,6 +9,9 @@ composer:validate:
   stage: validation
   script:
     - composer validate
+    - composer install
+    - composer cs-check
+    - composer md-check
 
 deploy:composer:
   stage: deploy
