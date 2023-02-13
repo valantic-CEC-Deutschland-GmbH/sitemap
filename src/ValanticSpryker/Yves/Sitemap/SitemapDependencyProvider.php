@@ -2,9 +2,9 @@
 
 namespace ValanticSpryker\Yves\Sitemap;
 
-use ValanticSpryker\Client\Sitemap\SitemapClient;
 use Spryker\Yves\Kernel\AbstractBundleDependencyProvider;
 use Spryker\Yves\Kernel\Container;
+use ValanticSpryker\Client\Sitemap\SitemapClient;
 
 class SitemapDependencyProvider extends AbstractBundleDependencyProvider
 {

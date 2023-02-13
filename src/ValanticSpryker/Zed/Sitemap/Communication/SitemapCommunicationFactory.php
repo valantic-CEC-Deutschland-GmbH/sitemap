@@ -2,11 +2,11 @@
 
 namespace ValanticSpryker\Zed\Sitemap\Communication;
 
+use Spryker\Zed\Kernel\Communication\AbstractCommunicationFactory;
 use ValanticSpryker\Zed\Sitemap\Business\Model\Handler\SitemapHandler;
 use ValanticSpryker\Zed\Sitemap\Business\Model\Handler\SitemapHandlerInterface;
 use ValanticSpryker\Zed\Sitemap\Communication\Table\SitemapDataTable;
 use ValanticSpryker\Zed\Sitemap\SitemapDependencyProvider;
-use Spryker\Zed\Kernel\Communication\AbstractCommunicationFactory;
 
 /**
  * @method \ValanticSpryker\Zed\Sitemap\Persistence\SitemapQueryContainerInterface getQueryContainer()

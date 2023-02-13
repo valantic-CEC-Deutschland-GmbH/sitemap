@@ -2,8 +2,8 @@
 
 namespace ValanticSpryker\Yves\Sitemap;
 
-use ValanticSpryker\Client\Sitemap\SitemapClientInterface;
 use Spryker\Yves\Kernel\AbstractFactory;
+use ValanticSpryker\Client\Sitemap\SitemapClientInterface;
 
 class SitemapFactory extends AbstractFactory
 {

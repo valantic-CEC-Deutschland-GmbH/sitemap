@@ -4,8 +4,8 @@ namespace ValanticSpryker\Client\Sitemap;
 
 use Generated\Shared\Transfer\SitemapResponseTransfer;
 use Generated\Shared\Transfer\SitemapTransfer;
-use ValanticSpryker\Client\Sitemap\Zed\SitemapStubInterface;
 use Spryker\Client\Kernel\AbstractClient;
+use ValanticSpryker\Client\Sitemap\Zed\SitemapStubInterface;
 
 /**
  * @method \ValanticSpryker\Client\Sitemap\SitemapFactory getFactory()

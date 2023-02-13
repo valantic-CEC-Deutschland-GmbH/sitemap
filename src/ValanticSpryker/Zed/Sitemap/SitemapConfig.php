@@ -5,9 +5,9 @@ declare(strict_types = 1);
 namespace ValanticSpryker\Zed\Sitemap;
 
 use Pyz\Shared\Application\ApplicationConstants;
-use ValanticSpryker\Shared\Sitemap\SitemapConstants;
 use Spryker\Shared\Kernel\Store;
 use Spryker\Zed\Kernel\AbstractBundleConfig;
+use ValanticSpryker\Shared\Sitemap\SitemapConstants;
 
 class SitemapConfig extends AbstractBundleConfig
 {

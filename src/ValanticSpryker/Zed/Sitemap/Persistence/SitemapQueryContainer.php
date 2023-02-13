@@ -81,7 +81,7 @@ class SitemapQueryContainer extends AbstractQueryContainer implements SitemapQue
         if ($urlStorageEntity->getFkCategorynode() !== null) {
             $this->toggleUrlVisibilityForCategoryChildren(
                 $urlStorageEntity->getFkCategorynode(),
-                $urlStorageTransfer->getVisible()
+                $urlStorageTransfer->getVisible(),
             );
         }
 

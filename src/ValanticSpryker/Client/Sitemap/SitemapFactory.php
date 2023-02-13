@@ -2,10 +2,10 @@
 
 namespace ValanticSpryker\Client\Sitemap;
 
-use ValanticSpryker\Client\Sitemap\Zed\SitemapStub;
-use ValanticSpryker\Client\Sitemap\Zed\SitemapStubInterface;
 use Spryker\Client\Kernel\AbstractFactory;
 use Spryker\Client\ZedRequest\ZedRequestClientInterface;
+use ValanticSpryker\Client\Sitemap\Zed\SitemapStub;
+use ValanticSpryker\Client\Sitemap\Zed\SitemapStubInterface;
 
 class SitemapFactory extends AbstractFactory
 {

@@ -92,7 +92,7 @@ class SitemapHandler implements SitemapHandlerInterface
         return (new SitemapResponseTransfer())->fromArray(
             [
                 'urls' => file_get_contents($filePointer),
-            ]
+            ],
         );
     }
 
@@ -118,7 +118,7 @@ class SitemapHandler implements SitemapHandlerInterface
 
             $filename = static::SITEMAP_FILE_NAME . "_" . $locale . "_" . $page . static::DOT_XML_EXTENSION;
             $sitemapIndexNode->appendChild(
-                $domtree->createElement('loc', $this->config->getYvesHost() . "/$locale/" . $filename)
+                $domtree->createElement('loc', $this->config->getYvesHost() . "/$locale/" . $filename),
             );
         }
 

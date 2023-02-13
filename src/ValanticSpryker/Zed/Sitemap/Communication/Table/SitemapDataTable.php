@@ -6,10 +6,10 @@ use Orm\Zed\UrlStorage\Persistence\Map\SpyUrlStorageTableMap;
 use Orm\Zed\UrlStorage\Persistence\SpyUrlStorage;
 use Orm\Zed\UrlStorage\Persistence\SpyUrlStorageQuery;
 use Propel\Runtime\Collection\ObjectCollection;
-use ValanticSpryker\Zed\Sitemap\Persistence\SitemapQueryContainerInterface;
 use Spryker\Service\UtilText\Model\Url\Url;
 use Spryker\Zed\Gui\Communication\Table\AbstractTable;
 use Spryker\Zed\Gui\Communication\Table\TableConfiguration;
+use ValanticSpryker\Zed\Sitemap\Persistence\SitemapQueryContainerInterface;
 
 class SitemapDataTable extends AbstractTable
 {

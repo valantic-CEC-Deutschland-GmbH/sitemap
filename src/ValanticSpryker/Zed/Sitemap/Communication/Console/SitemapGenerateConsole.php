@@ -44,7 +44,7 @@ class SitemapGenerateConsole extends Console
         $messenger->info(sprintf(
             'Started %s %s!',
             static::COMMAND_NAME,
-            $locale
+            $locale,
         ));
 
         $sitemapTransfer = (new SitemapTransfer())->setLocale($locale);
