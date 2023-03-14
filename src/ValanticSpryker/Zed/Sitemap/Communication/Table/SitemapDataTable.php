@@ -195,4 +195,14 @@ class SitemapDataTable extends AbstractTable
     {
         return $this->sitemapQueryContainer->getSpyUrlStorageQuery();
     }
+
+    /**
+     * @return string[]
+     */
+    protected function getTwigPaths()
+    {
+        return [
+            '/../../Presentation/Table/',
+        ];
+    }
 }
