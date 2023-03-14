@@ -83,26 +83,8 @@ class ConsoleDependencyProvider extends SprykerConsoleDependencyProvider
 }
 ```
 
-4. Rename ESA into your project name
-- In src/ValanticSpryker/Yves/Sitemap/Plugin/Provider/SitemapControllerProvider.php:45-53
-```php
-/**
- * Pattern: ((esa(\_(de|en))?)|((de|en)\/esa(\_(de|en))))(\_[0-9]+)?\.xml
- * Takes into consideration the following paths:
- * - {$storeLocales}/esa_{$storeLocales}_{number}.xml
- * - {$storeLocales}/esa_{$storeLocales}.xml
- * - {$storeLocales}/esa.xml
- * - esa_{$storeLocales}_{number}.xml
- * - esa_{$storeLocales}.xml
- * - esa_{number}.xml
- * - esa.xml
- *
- * @return string
- */
-```
-
-5. Replace project name
-- Add cronjob in current/config/Zed/cronjobs/jenkins.php
+4. Replace project name
+- Add cronjob for each exsting language in current/config/Zed/cronjobs/jenkins.php
 ```php
 $jobs[] = [
     'name' => 'generate-sitemap-de',
@@ -114,7 +96,7 @@ $jobs[] = [
 ];
 ```
 
-6. Adjust config file
+5. Adjust config file
 - Add sitemap constants with your locales
 ```php
 $config[SitemapConstants::SITEMAP_LOCALES] = [
@@ -130,7 +112,7 @@ $config[SitemapConstants::SITEMAP_URL_LIMIT] = 50;
 $config[SitemapConstants::SITEMAP_SIZE_LIMIT] = 100;
 ```
 
-7. Copy vendor template files into project folder
+6. Copy vendor template files into project folder
 ```
 mkdir -p src/Pyz/Zed/Sitemap/Presentation
 cp -r vendor/valantic-spryker/sitemap/src/ValanticSpryker/Zed/Sitemap/Presentation/* src/Pyz/Zed/Sitemap/Presentation

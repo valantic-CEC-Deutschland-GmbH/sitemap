@@ -42,15 +42,11 @@ class SitemapControllerProvider extends AbstractRouteProviderPlugin
     }
 
     /**
-     * Pattern: ((esa(\_(de|en))?)|((de|en)\/esa(\_(de|en))))(\_[0-9]+)?\.xml
      * Takes into consideration the following paths:
-     * - {$storeLocales}/esa_{$storeLocales}_{number}.xml
-     * - {$storeLocales}/esa_{$storeLocales}.xml
-     * - {$storeLocales}/esa.xml
-     * - esa_{$storeLocales}_{number}.xml
-     * - esa_{$storeLocales}.xml
-     * - esa_{number}.xml
-     * - esa.xml
+     * - {$storeLocales}/sitemap_{number}.xml
+     * - {$storeLocales}/sitemap.xml
+     * - sitemap_{number}.xml
+     * - sitemap.xml
      *
      * @return string
      */
