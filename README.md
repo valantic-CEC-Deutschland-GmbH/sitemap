@@ -129,3 +129,9 @@ $config[SitemapConstants::SITEMAP_LOCALES] = [
 $config[SitemapConstants::SITEMAP_URL_LIMIT] = 50;
 $config[SitemapConstants::SITEMAP_SIZE_LIMIT] = 100;
 ```
+
+7. Copy vendor template files into project folder
+```
+mkdir -p src/Pyz/Zed/Sitemap/Presentation
+cp -r vendor/valantic-spryker/sitemap/src/ValanticSpryker/Zed/Sitemap/Presentation/* src/Pyz/Zed/Sitemap/Presentation
+```
