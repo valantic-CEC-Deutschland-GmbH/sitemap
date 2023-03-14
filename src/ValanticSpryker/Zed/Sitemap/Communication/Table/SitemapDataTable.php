@@ -199,7 +199,7 @@ class SitemapDataTable extends AbstractTable
     /**
      * @return array
      */
-    protected function getTwigPaths()
+    protected function getTwigPaths(): array
     {
         return [
             '/../../Presentation/Table/',
