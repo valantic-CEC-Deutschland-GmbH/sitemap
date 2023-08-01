@@ -4,7 +4,7 @@
 
 1. Install dependency
 ```
-composer require valantic-cec/sitemap
+composer require valantic-spryker-shop/sitemap
 ```
 
 2. Register RouterPlugin
