@@ -2,7 +2,7 @@
   "name": "valantic-cec/sitemap",
   "type": "library",
   "description": "Provides sitemap",
-  "license": "MIT",
+  "license": "proprietary",
   "require": {
     "php": ">=7.4",
     "spryker/kernel": "^3.30.0"
