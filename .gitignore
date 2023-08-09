@@ -5,6 +5,8 @@ nbproject/
 .buildpath/
 .settings/
 *.sublime-*
+src/Generated/*
+src/Orm/*
 
 # OS
 .DS_Store
@@ -16,9 +18,6 @@ nbproject/
 .grunt
 .sass-cache
 /node_modules/
-
-# sitemap stuff
-/shared
 
 # tooling
 vendor/
@@ -39,3 +38,5 @@ tests/**/_generated/
 tests/_output/*
 !tests/_output/.gitkeep
 tests/app/*
+src/Orm
+src/Generated
